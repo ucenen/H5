@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <title>易齐赚平台后台系统</title>
+  <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+  <meta content="yes" name="apple-mobile-web-app-capable"/>
+  <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store"/>
+  <link rel="icon" href="static/img/logo.png" type="image/x-icon"/>
+  <link rel="stylesheet" type="text/css" href="./static/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./static/css/scrollbar.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!--<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">-->
+  <style>
+    /*body{*/
+      /*background: #FFFFFF !important;*/
+    /*}*/
+    #ieWrap {
+      font-size: 20px;
+      line-height: 80px;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 10000;
+      background: #ffffff;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<div id="ieWrap">系统检测到您正在使用ie8以下内核的浏览器，不能实现完美体验，请及时更新浏览器版本或切换游览器！</div>
+<div id="app"></div>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/vuex/2.1.1/vuex.min.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/2.7.0/vue-router.min.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/element-ui/2.13.0/index.js"></script>-->
+<script>
+  var DEFAULT_VERSION = 8.0;
+  var ua = navigator.userAgent.toLowerCase();
+  var isIE = ua.indexOf("msie") > -1;
+  var safariVersion;
+  if (isIE) {
+    safariVersion = ua.match(/msie ([\d.]+)/)[1];
+  }
+  if (safariVersion <= DEFAULT_VERSION) {
+    // 进行你所要的操作
+    document.getElementById('ieWrap').style.display = 'block';
+  }
+</script>
+<script src="./static/js/vue.min.js"></script>
+<script src="./static/js/vuex.min.js"></script>
+<script src="./static/js/vue-router.min.js"></script>
+<script src="./static/js/index.js"></script>
+<script src="./static/js/aliyun-oss-sdk-5.3.1.min.js"></script>
+<script src="./static/js/aliyun-upload-sdk-1.5.0.min.js"></script>
+<!--<script>
+  var _hmt = _hmt || [];
+  (function () {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?79ee0e9f63d4bd87c861f98a6d497993";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>-->
+</body>
+</html>

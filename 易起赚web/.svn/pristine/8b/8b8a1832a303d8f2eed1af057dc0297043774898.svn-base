@@ -1,0 +1,99 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+     -webkit-appearance none
+input[type='number']
+     -moz-appearance textfield
+.right_con
+     margin-top 105px !important
+.pagenum_mod
+     margin-bottom 0px !important
+.nav-top
+     border-bottom 1px solid #eeeeee
+.clearFox
+     clear both
+.el-form-item.is-error .el-input__inner, .el-form-item.is-error .el-input__inner:focus, .el-form-item.is-error .el-textarea__inner, .el-form-item.is-error .el-textarea__inner:focus, .el-message-box__input input.invalid, .el-message-box__input input.invalid:focus
+    //border-color "" !important;
+.result-con
+     padding-bottom 40px !important
+.el-dialog__header
+     padding 10px 20px 10px
+     background #C13A3C
+.el-dialog__title
+     color white
+     font-size 16px
+.el-dialog__headerbtn
+     top 15px
+     .el-dialog__close
+           color #ffffff
+.el-table-column--selection .cell
+     padding-right 10px !important
+.el-cascader
+     width 100%
+.el-table thead th
+     background #FAFAFA !important
+.el-table th
+     user-select text !important
+.el-table thead th > .cell
+     color #262626
+     font-weight normal
+.el-table td
+     padding 2px 0 !important
+.add-contain
+     padding 0 20px
+.el-tree-node__label
+     font-size 12px !important
+.el-textarea__inner
+     font-size 12px
+     font-family  "Microsoft Yahei", Arial
+.w140
+     width 140px !important
+.w120
+     width 120px !important
+.w106
+     width 106px !important
+.w96
+     width 96px  !important
+.w80
+     width 80px  !important
+.w88
+     width 88px  !important
+.w90
+     width 90px  !important
+.w100
+     width 100px !important
+.mr30
+     margin-right 30px !important
+.minW .el-dialog
+           width 640px
+       .el-form
+           overflow hidden
+           .el-form-item
+               width 50%
+               float left
+           .el-input
+               width 100% !important
+           .hundred
+               width 100%
+               float left
+       .tree-other
+           max-height 240px
+           overflow-y auto
+       .new-other
+
+           .el-form-item
+                width 100% !important
+                float left
+.el-input__inner
+     font-size 12px
+
+h3
+     font-family PingFang SC
+.close_all
+     width 45px
+     position relative
+     float left
+.mr22
+     margin-right -5px !important
+
+
+
